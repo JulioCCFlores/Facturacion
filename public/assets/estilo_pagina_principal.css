@@ -1,0 +1,61 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-custom {
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.navbar-custom .navbar-brand img {
+    width: 50px;
+}
+.navbar-custom .navbar-nav .nav-item .btn {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    margin-right: 30px;
+    height: 30px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-custom .navbar-nav .nav-item .btn:hover {
+    background-color: #ffffff;
+}
+.navbar-custom .navbar-nav .nav-item img {
+    width: 30px;
+    margin-right: 35px;
+}
+.navbar-custom .navbar-nav .nav-item2 img {
+    width: 30px;
+}
+.navbar-custom .navbar-nav .nav-item3 img {
+    width: 3px;
+}
+.navbar-nav-center {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.divider {
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+.content-wrapper {
+    padding: 20px;
+}
+.config-box {
+    border: 1px solid #4CAF50;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.main-panel {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
