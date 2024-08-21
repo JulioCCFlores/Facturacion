@@ -27,10 +27,9 @@ return new class extends Migration
         $table->timestamps();
 
         // Claves foráneas
-        $table->foreign('estado')->references('estado')->on('cfdi_400_estados');
-        $table->foreign('municipio')->references('municipio')->on('cfdi_400_municipios')->onDelete('cascade');
-        $table->foreign('regimen_fiscal_id')->references('id')->on('regimenes_fiscales')->onDelete('cascade');
-    });
+        $table->foreign(['municipio', 'estado'])->references(['municipio', 'estado'])->on('cfdi_400_municipios')->onDelete('cascade');
+        $table->foreign('estado')->references('estado')->on('cfdi_400_estados')->onDelete('cascade');
+        $table->foreign('regimen_fiscal_id')->references('id')->on('regimenes_fiscales')->onDelete('cascade');});
 }
 
     /**
