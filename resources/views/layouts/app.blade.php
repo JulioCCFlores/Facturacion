@@ -140,10 +140,10 @@
                     </div>
                 </li>
                 <li class="nav-item3" style="padding-right: 10px">
-                    <img src="{{ asset('images/linea2.png') }}" alt="Línea">
+                    <img src="{{ asset('images/Linea2.png') }}" alt="Línea">
                 </li>
                 <li class="nav-item2">
-                    <img src="{{ asset('images/user.png') }}" alt="Usuario">
+                    <img src="{{ asset('images/User.png') }}" alt="Usuario">
                     {{ Auth::user()->email }}
                 </li>
             </ul>
