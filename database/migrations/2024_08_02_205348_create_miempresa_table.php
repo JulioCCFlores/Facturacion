@@ -16,14 +16,14 @@ class CreateMiempresaTable extends Migration
         Schema::create('miempresa', function (Blueprint $table) {
             $table->id();
             $table->string('razon_social');
-            $table->string('regimen_fiscal_id');
+            $table->string('regimen_fiscal_id')->nullable();
             $table->string('rfc')->unique();
             $table->string('logotipo')->nullable();
             $table->string('archivo_cer')->nullable();
             $table->string('archivo_key')->nullable();
             $table->string('calle');
-            $table->string('municipio');
-            $table->string('estado');
+            $table->string('municipio')->nullable();
+            $table->string('estado')->nullable();
             $table->string('codigo_postal');
             $table->timestamps();
         

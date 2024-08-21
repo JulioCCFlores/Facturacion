@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+
+  
 <div class="container">
-    <form action="{{ route('miempresa.update', $miempresa->id) }}" method="POST" id="miempresaForm" enctype="multipart/form-data">
+    <form action="{{ route('empresaprincipal.update', $miempresa->id) }}" method="POST" id="miempresaForm" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <div class="row">

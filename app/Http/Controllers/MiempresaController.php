@@ -17,7 +17,7 @@ class MiempresaController extends Controller
         $estados = Cfdi400Estado::all();
         $municipios = Cfdi400Municipio::where('estado', $miempresa->estado)->get();
         $regimenesFiscales = RegimenFiscal::all();
-        return view('miempresa.index', compact('miempresa', 'estados', 'municipios', 'regimenesFiscales'));
+        return view('empresaprincipal.index', compact('miempresa', 'estados', 'municipios', 'regimenesFiscales'));
         
     }
 
@@ -52,6 +52,6 @@ class MiempresaController extends Controller
         
         $miempresa->update($request->except('logotipo'));
 
-        return redirect()->route('miempresa.index')->with('success', 'miempresa actualizado exitosamente.');
+        return redirect()->route('empresaprincipal.index')->with('success', 'miempresa actualizado exitosamente.');
     }
 }

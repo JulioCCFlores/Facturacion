@@ -124,7 +124,7 @@
                         Configuración
                     </button>
                     <div class="dropdown-menu" aria-labelledby="configuracionDropdown">
-                        <a class="dropdown-item" href="{{ route('miempresa.index') }}">Datos</a>
+                        <a class="dropdown-item" href="{{ route('empresaprincipal.index') }}">Datos</a>
                     </div>
                 </li>
             </ul>

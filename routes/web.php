@@ -31,9 +31,9 @@ use App\Http\Controllers\PDFController;
 
 Auth::routes();
 
-Route::get('/', function () {
-    return view('welcome');
-});
+ Route::get('/', function () {
+     return view('auth.login');
+ });
 
 
 Route::get('/quickbooks/connect', [QuickBooksController::class, 'connect']);
@@ -64,10 +64,10 @@ Route::get('/productos/unidad', [App\Http\Controllers\UnidadController::class, '
 Route::get('/facturas/create', [App\Http\Controllers\FacturaController::class, 'create'])->name('facturas.create');
 Route::get('/facturas/index', [App\Http\Controllers\FacturaController::class, 'index'])->name('facturas.index');
 /*Mi empresa*/
-Route::get('/miempresa/index', [App\Http\Controllers\MiempresaController::class, 'index'])->name('miempresa.index');
-Route::get('/miempresa/store', [App\Http\Controllers\MiempresaController::class, 'store'])->name('miempresa.store');
-Route::get('/miempresa/edit', [App\Http\Controllers\MiempresaController::class, 'edit'])->name('miempresa.edit');
-Route::put ('/miempresa/update', [App\Http\Controllers\MiempresaController::class, 'update'])->name('miempresa.update');
+Route::get('/empresaprincipal/index', [App\Http\Controllers\MiempresaController::class, 'index'])->name('empresaprincipal.index');
+ Route::get('/empresaprincipal/store', [App\Http\Controllers\MiempresaController::class, 'store'])->name('empresaprincipal.store');
+ Route::get('/empresaprincipal/edit', [App\Http\Controllers\MiempresaController::class, 'edit'])->name('empresaprincipal.edit');
+ Route::get ('/empresaprincipal/update', [App\Http\Controllers\MiempresaController::class, 'update'])->name('empresaprincipal.update');
 
 
 // routes/web.php
