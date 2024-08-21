@@ -18,19 +18,20 @@ class CreateMiempresaTable extends Migration
             $table->string('razon_social');
             $table->string('regimen_fiscal_id');
             $table->string('rfc')->unique();
-            $table->string('logotipo')->nullable(); // URL or path to the image
-            $table->string('archivo_cer')->nullable(); // URL or path to the .cer file
-            $table->string('archivo_key')->nullable(); // URL or path to the .key file
+            $table->string('logotipo')->nullable();
+            $table->string('archivo_cer')->nullable();
+            $table->string('archivo_key')->nullable();
             $table->string('calle');
             $table->string('municipio');
             $table->string('estado');
             $table->string('codigo_postal');
             $table->timestamps();
-     
-        $table->foreign('estado')->references('estado')->on('cfdi_40_estados');
-        $table->foreign('municipio')->references('municipio')->on('cfdi_40_municipios')->onDelete('cascade');
-        $table->foreign('regimen_fiscal_id')->references('id')->on('regimenes_fiscales')->onDelete('cascade');
-    });
+        
+            $table->foreign(['municipio', 'estado'])->references(['municipio', 'estado'])->on('cfdi_400_municipios')->onDelete('cascade');
+            $table->foreign('estado')->references('estado')->on('cfdi_400_estados')->onDelete('cascade');
+            $table->foreign('regimen_fiscal_id')->references('id')->on('regimenes_fiscales')->onDelete('cascade');
+        });
+        
     }
 
     /**
