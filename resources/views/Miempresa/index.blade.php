@@ -83,7 +83,7 @@
             </div>
         </div>
         <div id="buttons" class="form-group">
-            <button type="button" class="btn btn-primary" id="editButton" onclick="enableEditing()">Editar</button>
+            <button type="button" class="btn btn-primary" id="editButton" onclick="enableEditing()">editar</button>
             <button type="submit" class="btn btn-success" id="saveButton" style="display:none;">Guardar</button>
             <button type="button" class="btn btn-secondary" id="cancelButton" style="display:none;" onclick="disableEditing()">Cancelar</button>
         </div>
