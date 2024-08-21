@@ -67,7 +67,7 @@ Route::get('/facturas/index', [App\Http\Controllers\FacturaController::class, 'i
 Route::get('/empresaprincipal/index', [App\Http\Controllers\MiempresaController::class, 'index'])->name('empresaprincipal.index');
  Route::get('/empresaprincipal/store', [App\Http\Controllers\MiempresaController::class, 'store'])->name('empresaprincipal.store');
  Route::get('/empresaprincipal/edit', [App\Http\Controllers\MiempresaController::class, 'edit'])->name('empresaprincipal.edit');
- Route::get ('/empresaprincipal/update', [App\Http\Controllers\MiempresaController::class, 'update'])->name('empresaprincipal.update');
+ Route::put ('/empresaprincipal/update', [App\Http\Controllers\MiempresaController::class, 'update'])->name('empresaprincipal.update');
 
 
 // routes/web.php
