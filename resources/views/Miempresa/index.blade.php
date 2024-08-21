@@ -143,7 +143,7 @@
             });
     }
 
-    // Inicialmente deshabilitar todos los campos del formulario
+
     disableEditing();
 </script>
 @endsection
