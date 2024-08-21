@@ -17,7 +17,7 @@ class Cfdi400EstadosSeeder extends Seeder
         DB::table('cfdi_400_estados')->insert([
             ['estado' => 'Aguascalientes'],
             ['estado' => 'Baja California norte'],
-            ['estado' => 'Baja California Sur'],
+            ['estado' => 'Baja California sur'],
             ['estado' => 'Campeche'],
             ['estado' => 'Chihuahua'],
             ['estado' => 'Chiapas'],
