@@ -11,7 +11,7 @@
 <body style="background-color: #F4F4F4;">
     <div class="login-container">
         
-        <img src="{{ asset('images/logo LOGING.png') }}" alt="Logo">
+        <img src="{{ asset('images/Logo LOGING.png') }}" alt="Logo">
         <h2>Ingresa a tu cuenta</h2>
 
         @if (session('success'))

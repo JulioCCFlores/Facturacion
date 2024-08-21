@@ -11,7 +11,7 @@
 <body style="background-color: #F4F4F4;">
     <div class="login-container">
         
-        <img src="{{ asset('images/logo LOGING.png') }}" alt="Mini Logo" style="width: 50px; height: 50px;">
+        <img src="{{ asset('images/Logo LOGING.png') }}" alt="Mini Logo" style="width: 50px; height: 50px;">
        
         <h2>Crea tu cuenta</h2>
 
