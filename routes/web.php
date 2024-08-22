@@ -53,7 +53,7 @@ Route::resource('clientes', ClienteController::class);
 Route::get('/impuestos/index', [App\Http\Controllers\ImpuestoController::class, 'index'])->name('impuestos.index');
 Route::get('/impuestos/create', [App\Http\Controllers\ImpuestoController::class, 'create'])->name('impuestos.create');
 Route::post('/impuestos/store', [App\Http\Controllers\ImpuestoController::class, 'store'])->name('impuestos.store');
-//Route::resource('impuestos', ImpuestoController::class);
+Route::resource('impuestos', ImpuestoController::class);
 /*productos*//*productos*/
 Route::get('/productos/index', [App\Http\Controllers\ProductoController::class, 'index'])->name('productos.index');
 Route::get('/productos/create', [App\Http\Controllers\ProductoController::class, 'create'])->name('productos.create');

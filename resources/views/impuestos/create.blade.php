@@ -3,6 +3,7 @@
 @section('content')
     <div class="container">
         <h1>Crear Nuevo Cliente</h1>
+        
         <form action="{{ route('impuestos.store') }}" method="POST">
             @csrf
             <div class="form-group">
