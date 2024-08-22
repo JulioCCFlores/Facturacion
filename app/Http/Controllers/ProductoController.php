@@ -38,4 +38,28 @@ class ProductoController extends Controller
 
         return redirect()->route('productos.index')->with('success', 'producto creado exitosamente.');
     }
+    public function edit($id)
+    {
+        $producto = Producto::with('ClaveUnidad', 'ClaveProducto')->findOrFail($id);
+
+        $ClaveProductos = ClaveProducto::all();
+        $ClaveUnidades = ClaveUnidad::all();
+        return view('productos.edit', compact('producto', 'ClaveProductos', 'ClaveUnidades'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'clave_producto_servicio' => 'required',
+            'descripcion' => 'required|max:255',
+            'clave_unidad' => 'required',
+            'precio' => 'required',
+            'unidad' => 'required',
+        ]);
+
+        $producto = Producto::findOrFail($id);
+        $producto->update($request->all());
+
+        return redirect()->route('productos.index')->with('success', 'Producto actualizado exitosamente.');
+    }
 }

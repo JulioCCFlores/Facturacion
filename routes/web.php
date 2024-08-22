@@ -58,10 +58,11 @@ Route::resource('impuestos', ImpuestoController::class);
 Route::get('/productos/index', [App\Http\Controllers\ProductoController::class, 'index'])->name('productos.index');
 Route::get('/productos/create', [App\Http\Controllers\ProductoController::class, 'create'])->name('productos.create');
 Route::post('/productos/store', [App\Http\Controllers\ProductoController::class, 'store'])->name('productos.store');
+Route::get('/productos/{id}/edit', [App\Http\Controllers\ProductoController::class, 'edit'])->name('productos.edit');
+Route::put('/productos/{id}', [App\Http\Controllers\ProductoController::class, 'update'])->name('productos.update');
 Route::get('/productos/servicio', [App\Http\Controllers\ServicioController::class, 'servicio'])->name('productos.servicio');
 Route::get('/productos/unidad', [App\Http\Controllers\UnidadController::class, 'unidad'])->name('productos.unidad');
-//Route::get('/productos/edit', [App\Http\Controllers\ProductoController::class, 'edit'])->name('productos.edit');
-//Route::put ('/productos/update', [App\Http\Controllers\ProductoController::class, 'update'])->name('productos.update');
+
 
 
 /*facturacion*/
