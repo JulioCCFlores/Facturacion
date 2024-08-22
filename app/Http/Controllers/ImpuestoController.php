@@ -26,11 +26,11 @@ class ImpuestoController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nombre' => 'required|max:255',
+            'nombre' => 'required',
             'Impuesto' => 'required',
             'Tipo' => 'required',
             'Factor' => 'required',
-            'Tasa' => 'required|max:103',
+            'Tasa' => 'required',
             
         ]);
 
@@ -51,11 +51,11 @@ class ImpuestoController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'nombre' => 'required|max:255',
+            'nombre' => 'required',
             'Impuesto' => 'required',
             'Tipo' => 'required',
             'Factor' => 'required',
-            'Tasa' => 'required|max:103',
+            'Tasa' => 'required',
             
         ]);
 

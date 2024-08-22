@@ -10,6 +10,7 @@ class Impuesto extends Model
     use HasFactory;
 
     protected $fillable = [
+        'id',
         'nombre',
         'Impuesto',
         'Tipo',

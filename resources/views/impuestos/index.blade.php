@@ -9,6 +9,7 @@
             <table class="table table-striped">
               <thead>
                 <tr>
+                  <th>id</th>
                   <th>Nombre</th>
                   <th>Impuesto</th>
                   <th>Tipo</th>
@@ -20,6 +21,7 @@
               <tbody>
                 @foreach($impuestos as $impuesto)
                   <tr>
+                    <td>{{ $impuesto->id }}</td>
                     <td>{{ $impuesto->nombre }}</td>
                     <td>{{ $impuesto->Impuesto }}</td>
                     <td>{{ $impuesto->Tipo }}</td>
