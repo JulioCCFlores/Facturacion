@@ -14,12 +14,12 @@ return new class extends Migration
         Schema::create('cfdi_40_productos_servicios', function (Blueprint $table) {
             $table->string('id')->primary();
             $table->text('texto')->nullable();
-            $table->integer('iva_trasladado')->nullable();
-            $table->integer('ieps_trasladado')->nullable();
+            $table->text('iva_trasladado')->nullable();
+            $table->text('ieps_trasladado')->nullable();
             $table->text('complemento')->nullable();
             $table->string('vigencia_desde')->nullable();
             $table->string('vigencia_hasta')->nullable();
-            $table->integer('estimulo_frontera')->nullable();
+            $table->text('estimulo_frontera')->nullable();
             $table->text('similares')->nullable();
         });
     }
