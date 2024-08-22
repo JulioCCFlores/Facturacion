@@ -50,9 +50,9 @@ Route::post('/clientes/store', [App\Http\Controllers\ClienteController::class, '
 Route::get('/clientes/getMunicipios/{estado}', [ClienteController::class, 'getMunicipios'])->name('clientes.getMunicipios');
 Route::resource('clientes', ClienteController::class);
 /*impuestos*/
-Route::get('/impuestos/index', [App\Http\Controllers\ImpuestoController::class, 'index'])->name('impuestos.index');
-Route::get('/impuestos/create', [App\Http\Controllers\ImpuestoController::class, 'create'])->name('impuestos.create');
-Route::post('/impuestos/store', [App\Http\Controllers\ImpuestoController::class, 'store'])->name('impuestos.store');
+//Route::get('/impuestos/index', [App\Http\Controllers\ImpuestoController::class, 'index'])->name('impuestos.index');
+//Route::get('/impuestos/create', [App\Http\Controllers\ImpuestoController::class, 'create'])->name('impuestos.create');
+//Route::post('/impuestos/store', [App\Http\Controllers\ImpuestoController::class, 'store'])->name('impuestos.store');
 Route::resource('impuestos', ImpuestoController::class);
 /*productos*//*productos*/
 Route::get('/productos/index', [App\Http\Controllers\ProductoController::class, 'index'])->name('productos.index');
