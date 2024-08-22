@@ -62,6 +62,7 @@ Route::get('/productos/{id}/edit', [App\Http\Controllers\ProductoController::cla
 Route::put('/productos/{id}', [App\Http\Controllers\ProductoController::class, 'update'])->name('productos.update');
 Route::get('/productos/servicio', [App\Http\Controllers\ServicioController::class, 'servicio'])->name('productos.servicio');
 Route::get('/productos/unidad', [App\Http\Controllers\UnidadController::class, 'unidad'])->name('productos.unidad');
+Route::resource('productos', ProductoController::class);
 
 
 

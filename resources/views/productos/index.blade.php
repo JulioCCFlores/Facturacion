@@ -64,7 +64,7 @@
         function confirmDelete(id) {
             // Configurar la acción del formulario para el cliente a eliminar
             let form = document.getElementById('deleteForm');
-            form.action = '/impuesto/' + id;
+            form.action = '/productos/' + id;
             
             // Mostrar el modal
             $('#deleteModal').modal('show');
