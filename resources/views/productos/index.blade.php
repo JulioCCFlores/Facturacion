@@ -23,10 +23,10 @@
                     <td>{{ $producto->clave_unidad}}-{{ $producto->ClaveUnidad->texto}}</td>
                     <td>{{ $producto->precio}}</td>
                     <td>{{ $producto->unidad}}</td>
-                    <td style="width:300px;">
+                    {{-- <td style="width:300px;">
                      <a href="{{ route('productos.edit', $producto->id) }}" class="btn btn-warning">Editar</a>
                       <button type="button" class="btn btn-danger" onclick="confirmDelete({{ $producto->id }})">Eliminar</button>
-                    </td>
+                    </td> --}}
                   </tr>
                @endforeach
               </tbody>

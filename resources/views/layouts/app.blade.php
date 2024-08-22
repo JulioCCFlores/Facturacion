@@ -115,7 +115,7 @@
                     <div class="dropdown-menu" aria-labelledby="catalogosDropdown">
                         <a class="dropdown-item" href="{{ route('productos.index') }}">Productos</a>
                         <a class="dropdown-item" href="{{ route('clientes.index') }}">Clientes</a>
-                        {{-- <a class="dropdown-item" href="{{ route('impuestos.index') }}">Impuestos</a> --}}
+                         <a class="dropdown-item" href="{{ route('impuestos.index') }}">Impuestos</a> 
                     </div>
                 </li>
                 <li class="nav-item dropdown">

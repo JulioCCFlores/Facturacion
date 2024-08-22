@@ -60,6 +60,10 @@ Route::get('/productos/create', [App\Http\Controllers\ProductoController::class,
 Route::post('/productos/store', [App\Http\Controllers\ProductoController::class, 'store'])->name('productos.store');
 Route::get('/productos/servicio', [App\Http\Controllers\ServicioController::class, 'servicio'])->name('productos.servicio');
 Route::get('/productos/unidad', [App\Http\Controllers\UnidadController::class, 'unidad'])->name('productos.unidad');
+//Route::get('/productos/edit', [App\Http\Controllers\ProductoController::class, 'edit'])->name('productos.edit');
+//Route::put ('/productos/update', [App\Http\Controllers\ProductoController::class, 'update'])->name('productos.update');
+
+
 /*facturacion*/
 Route::get('/facturas/create', [App\Http\Controllers\FacturaController::class, 'create'])->name('facturas.create');
 Route::get('/facturas/index', [App\Http\Controllers\FacturaController::class, 'index'])->name('facturas.index');
