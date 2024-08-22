@@ -25,7 +25,7 @@
                     <td>{{ $producto->unidad}}</td>
                     <td style="width:300px;">
                      <a href="{{ route('productos.edit', $impuesto->id) }}" class="btn btn-warning">Editar</a>
-                      <button type="button" class="btn btn-danger" onclick="confirmDelete({{ $impuesto->id }})">Eliminar</button>
+                      <button type="button" class="btn btn-danger" onclick="confirmDelete({{ $producto->id }})">Eliminar</button>
                     </td>
                   </tr>
                @endforeach
