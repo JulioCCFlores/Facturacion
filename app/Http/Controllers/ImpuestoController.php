@@ -26,11 +26,11 @@ class ImpuestoController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nombre' => 'required',
-            'Impuesto' => 'required',
-            'Tipo' => 'required',
-            'Factor' => 'required',
-            'Tasa' => 'required',
+            // 'nombre' => 'required',
+            // 'Impuesto' => 'required',
+            // 'Tipo' => 'required',
+            // 'Factor' => 'required',
+            // 'Tasa' => 'required',
             
         ]);
 
@@ -39,36 +39,36 @@ class ImpuestoController extends Controller
         return redirect()->route('impuestos.index')->with('success', 'impuesto creado exitosamente.');
     }
     
-    public function edit($id)
-    {
-        $impuesto = Impuesto::findOrFail($id);
-        $factores = ImpuestoFactor::all();
-        $tipos = ImpuestoTipo::all();
-        $timpuestos = timpuesto::all();
-        return view('impuestos.edit', compact('factores', 'tipos', 'timpuestos', 'impuesto'));
-    }
+    // public function edit($id)
+    // {
+    //     $impuesto = Impuesto::findOrFail($id);
+    //     $factores = ImpuestoFactor::all();
+    //     $tipos = ImpuestoTipo::all();
+    //     $timpuestos = timpuesto::all();
+    //     return view('impuestos.edit', compact('factores', 'tipos', 'timpuestos', 'impuesto'));
+    // }
 
-    public function update(Request $request, $id)
-    {
-        $request->validate([
-            'nombre' => 'required',
-            'Impuesto' => 'required',
-            'Tipo' => 'required',
-            'Factor' => 'required',
-            'Tasa' => 'required',
+    // public function update(Request $request, $id)
+    // {
+    //     $request->validate([
+    //         'nombre' => 'required',
+    //         'Impuesto' => 'required',
+    //         'Tipo' => 'required',
+    //         'Factor' => 'required',
+    //         'Tasa' => 'required',
             
-        ]);
+    //     ]);
 
-        $impuesto = Impuesto::findOrFail($id);
-        $impuesto->update($request->all());
+    //     $impuesto = Impuesto::findOrFail($id);
+    //     $impuesto->update($request->all());
 
-        return redirect()->route('impuestos.index')->with('success', 'impuesto actualizado exitosamente.');
-    }
+    //     return redirect()->route('impuestos.index')->with('success', 'impuesto actualizado exitosamente.');
+    // }
     
-    public function destroy($id)
-    {
-        $impuestos = Impuesto::findOrFail($id);
-        $impuestos->delete();
-        return redirect()->route('impuestos.index')->with('success', 'impuesto eliminado exitosamente.');
-    }
+    // public function destroy($id)
+    // {
+    //     $impuestos = Impuesto::findOrFail($id);
+    //     $impuestos->delete();
+    //     return redirect()->route('impuestos.index')->with('success', 'impuesto eliminado exitosamente.');
+    // }
 }

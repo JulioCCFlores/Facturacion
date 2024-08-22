@@ -17,8 +17,8 @@ class Impuesto extends Model
         'Factor',
         'Tasa',
     ];
-    public function facturaciones()
-    {
-        return $this->hasMany(Facturacion::class, 'id_impuestos');
-    }
+    // public function facturaciones()
+    // {
+    //     return $this->hasMany(Facturacion::class, 'id_impuestos');
+    // }
 }
