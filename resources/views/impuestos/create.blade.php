@@ -11,7 +11,7 @@
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
             </div>
             
-            <div class="form-group">
+            {{-- <div class="form-group">
                 <label for="Impuesto">Impuesto</label>
                 <select class="form-control" id="Impuesto" name="Impuesto" required>
                     <option value="">Seleccione un Impuesto</option>
@@ -43,7 +43,7 @@
             <div class="form-group">
                 <label for="Tasa">Tasa</label>
                 <input type="double" class="form-control" id="Tasa" name="Tasa" required>
-            </div>
+            </div> --}}
 
             <button type="submit" class="btn btn-primary">Guardar</button>
         </form>
